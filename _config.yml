@@ -12,6 +12,7 @@ people:
 - name: Ciro Carandente
   pic: ciro_carandente
   position: Founder & CEO
+  description: With extensive experience in software development, gained in prestigious environments such as Luxottica and the Italian Red Cross, he demonstrates remarkable ability in leading teams toward important goals, utilizing a wide range of technologies. He is capable of independently managing his/her workload, ensuring the respect of deadlines and objectives, and communicates effectively with clients and users. His/Her teamwork skills, developed both in academic and professional settings, make him/her a reliable and highly competent professional.
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/ciro-carandente/
@@ -21,6 +22,7 @@ people:
 - name: Claudio Cortese
   pic: claudio_cortese
   position: Founder & CTO
+  description: Extensive experience in software development at prestigious companies such as Luxottica, Namirial, and the Italian Red Cross, he excels in leading teams to success while working with diverse technology stacks. He demonstrates autonomy in work organization, meeting deadlines and objectives, and communicates clearly with clients and users. His experience in teamwork, both academic and professional, distinguishes him/her as a reliable and competent professional.
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/claudio-cortese/
