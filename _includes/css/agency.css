@@ -654,6 +654,10 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+.team-member .member-description {
+    height: 360px;
+}
+
 aside.clients img {
     margin: 50px auto;
 }
