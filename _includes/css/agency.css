@@ -271,7 +271,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8125), rgba(0, 0, 0, 0)), url('{{ site.baseurl }}/img/header-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
