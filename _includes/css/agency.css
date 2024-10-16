@@ -182,6 +182,11 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.primary }};
 }
 
+.navbar-default .navbar-brand img {
+    width: 44px;
+    margin-right: 20px;
+} 
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -651,8 +656,11 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
+    border-width: 7px;
+    border-style: solid;
     max-width: 200px;
+    padding: 8px;
+   color: color(display-p3 0.1836 0.4333 0.748);
 }
 
 .team-member h4 {
@@ -903,4 +911,9 @@ header a[href="#services"] {
     justify-content: space-between;
     width: 260px;
     margin: 0 auto;
+}
+
+section#team {
+    background-color: #3c0315;
+    color: white;
 }
