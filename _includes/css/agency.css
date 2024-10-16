@@ -297,6 +297,11 @@ header .intro-text {
     height: 100vh;
 }
 
+header .intro-heading img {
+    width: 120px; 
+    transform: scaleX(-1) translate(22px, -7px);
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
