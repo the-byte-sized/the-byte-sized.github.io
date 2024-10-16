@@ -359,13 +359,17 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 400px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    margin: 0 auto;
     max-width: 400px;
+    height: 240px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
