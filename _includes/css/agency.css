@@ -780,6 +780,13 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
+#portfolio-projects {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
