@@ -344,6 +344,8 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
 }
 
 section h3.section-subheading {
@@ -925,4 +927,15 @@ header a[href="#services"] {
 section#team {
     background-color: #3c0315;
     color: white;
+}
+
+.section-heading-wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 340px;
+    margin: 0 auto;
+    background-color: #772953;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 10px;
 }

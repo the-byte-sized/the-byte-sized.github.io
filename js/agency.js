@@ -35,3 +35,17 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    if(Typewriter) {
+        const servicesSectionHeading = document.querySelector("#services .section-heading");
+
+        if(servicesSectionHeading) {
+            new Typewriter(servicesSectionHeading, {
+                delay: "natural",
+                strings: "Services",
+                autoStart: true
+              });
+        }
+    }
+})
