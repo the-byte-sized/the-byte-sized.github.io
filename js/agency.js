@@ -39,11 +39,39 @@ $('div.modal').on('show.bs.modal', function() {
 document.addEventListener("DOMContentLoaded", () => {
     if(Typewriter) {
         const servicesSectionHeading = document.querySelector("#services .section-heading");
+        const portfolioSectionHeading = document.querySelector("#portfolio .section-heading");
+        const clientsSectionHeading = document.querySelector("#clients .section-heading");
+        const teamSectionHeading = document.querySelector("#team .section-heading");
 
+ 
         if(servicesSectionHeading) {
             new Typewriter(servicesSectionHeading, {
                 delay: "natural",
                 strings: "Services",
+                autoStart: true
+              });
+        }
+
+        if(portfolioSectionHeading) {
+            new Typewriter(portfolioSectionHeading, {
+                delay: "natural",
+                strings: "Portfolio",
+                autoStart: true
+              });
+        }
+
+        if(clientsSectionHeading) {
+            new Typewriter(clientsSectionHeading, {
+                delay: "natural",
+                strings: "Our partners",
+                autoStart: true
+              });
+        }
+
+        if(teamSectionHeading) {
+            new Typewriter(teamSectionHeading, {
+                delay: "natural",
+                strings: "The team",
                 autoStart: true
               });
         }
