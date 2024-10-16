@@ -369,7 +369,7 @@ section h3.section-subheading {
     position: relative;
     max-width: 400px;
     height: 240px;
-    background-size: contain;
+    background-size: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: var(--background-image);
