@@ -373,6 +373,7 @@ section h3.section-subheading {
     background-position: center;
     background-repeat: no-repeat;
     background-image: var(--background-image);
+    background-color: white;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
