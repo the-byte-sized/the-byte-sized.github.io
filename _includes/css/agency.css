@@ -794,9 +794,20 @@ ul.social-buttons li a:active {
 
 #portfolio-projects {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+}
+
+@media(max-width:768px) {
+    #portfolio-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:768px) {
+    #portfolio-projects {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .portfolio-modal .modal-content {
