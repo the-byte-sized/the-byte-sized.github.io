@@ -366,10 +366,16 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     max-width: 400px;
     height: 240px;
+}
+
+#portfolio .portfolio-item .portfolio-link img{
+    z-index: 1;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
