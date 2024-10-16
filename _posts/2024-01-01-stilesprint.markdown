@@ -2,7 +2,7 @@
 title: StileSprint
 subtitle: Book your next salon appointment in no time
 layout: default
-modal-id: 2
+modal-id: 4
 date: 2024-01-01
 img: stilesprint.png
 thumbnail: stilesprint-thumbnail.png
