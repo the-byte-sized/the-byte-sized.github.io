@@ -688,6 +688,10 @@ section#contact {
     background-repeat: no-repeat;
 }
 
+section#contact .section-heading-wrapper {
+    width: 400px;
+}
+
 section#contact .section-heading {
     color: #fff;
 }
@@ -925,7 +929,7 @@ header a[href="#services"] {
 }
 
 section#team {
-    background-color: #3c0315;
+    background-color: #772953;
     color: white;
 }
 
