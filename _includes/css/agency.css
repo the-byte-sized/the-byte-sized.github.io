@@ -337,7 +337,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0 100px 0px;
 }
 
 section h2.section-heading {
@@ -933,7 +933,7 @@ section#team {
     display: flex;
     align-items: baseline;
     width: 340px;
-    margin: 0 auto;
+    margin: 50px auto;
     background-color: #772953;
     color: white;
     padding: 16px 35px;

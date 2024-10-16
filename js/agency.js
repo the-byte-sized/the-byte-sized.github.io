@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const portfolioSectionHeading = document.querySelector("#portfolio .section-heading");
         const clientsSectionHeading = document.querySelector("#clients .section-heading");
         const teamSectionHeading = document.querySelector("#team .section-heading");
+        const contactSectionHeading = document.querySelector("#contact .section-heading");
 
  
         if(servicesSectionHeading) {
@@ -72,6 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
             new Typewriter(teamSectionHeading, {
                 delay: "natural",
                 strings: "The team",
+                autoStart: true
+              });
+        }
+
+        if(contactSectionHeading) {
+            new Typewriter(contactSectionHeading, {
+                delay: "natural",
+                strings: "Contact Us",
                 autoStart: true
               });
         }
