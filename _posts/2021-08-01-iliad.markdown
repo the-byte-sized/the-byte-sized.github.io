@@ -1,0 +1,15 @@
+---
+title: Iliad Area Personale
+subtitle: Unofficial app to manage Iliad SIM
+layout: default
+modal-id: 1
+date: 2021-08-01
+img: iliad.png
+thumbnail: iliad-thumbnail.png
+alt: Iliad Area Personale
+project-date: September 2021 - Today
+client: N/A
+category: App Development
+description: 
+
+---
