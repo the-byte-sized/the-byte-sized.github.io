@@ -1,0 +1,15 @@
+---
+title: InstaGym
+subtitle: Be a better yourself, now
+layout: default
+modal-id: 2
+date: 2024-01-01
+img: instagym.png
+thumbnail: instagym-thumbnail.jpeg
+alt: InstaGym
+project-date: January 2024 - Today
+client: N/A
+category: App Development
+description: The first social-oriented fitness app
+
+---
