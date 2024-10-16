@@ -176,6 +176,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
+    display: flex;
+    align-items: center;
     font-family: "Chakra Petch", sans-serif;
     font-style: italic;
     font-weight: 900;
@@ -419,6 +421,8 @@ section h3.section-subheading {
     text-align: center;
     background-color: #fff;
     height: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
