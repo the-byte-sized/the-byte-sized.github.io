@@ -372,10 +372,10 @@ section h3.section-subheading {
     position: relative;
     max-width: 400px;
     height: 240px;
-}
-
-#portfolio .portfolio-item .portfolio-link img{
-    z-index: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--background-image);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
