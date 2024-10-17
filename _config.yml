@@ -1,10 +1,11 @@
-url: https://cloudpower97.github.io
-baseurl: /
-
 # Site settings
+url: https://thebytesized.com
+baseurl: /
 title: The Byte-sized
+logo: /img/logos/the-byte-sized.png
+tagline: Tailored, efficient, and scalable digital solutions
+description: "The Byte Sized is a tech company specializing in app development, web development, backend solutions, and IT consulting. We deliver tailored, efficient, and scalable digital solutions, helping businesses transform their ideas into cutting-edge technology."
 email: claudio.cortese@thebytesized.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 
 # Team names, titles and social links
@@ -44,3 +45,6 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
