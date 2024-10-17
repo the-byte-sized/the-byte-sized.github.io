@@ -5,8 +5,8 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
+$(function () {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -21,68 +21,53 @@ $('body').scrollspy({
 })
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 
-$('div.modal').on('show.bs.modal', function() {
-	var modal = this;
-	var hash = modal.id;
-	window.location.hash = hash;
-	window.onhashchange = function() {
-		if (!location.hash){
-			$(modal).modal('hide');
-		}
-	}
+$('div.modal').on('show.bs.modal', function () {
+    var modal = this;
+    var hash = modal.id;
+    window.location.hash = hash;
+    window.onhashchange = function () {
+        if (!location.hash) {
+            $(modal).modal('hide');
+        }
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(Typewriter) {
+    if (Typewriter) {
         const servicesSectionHeading = document.querySelector("#services .section-heading");
         const portfolioSectionHeading = document.querySelector("#portfolio .section-heading");
         const clientsSectionHeading = document.querySelector("#clients .section-heading");
         const teamSectionHeading = document.querySelector("#team .section-heading");
         const contactSectionHeading = document.querySelector("#contact .section-heading");
 
- 
-        if(servicesSectionHeading) {
-            new Typewriter(servicesSectionHeading, {
-                delay: "natural",
-                strings: "Services",
-                autoStart: true
-              });
+        const callback = (entries, observer) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting) {
+                    new Typewriter(entry.target, {
+                        delay: "natural",
+                        strings: entry.target.dataset.text,
+                        autoStart: true
+                    });
+                    
+                    observer.disconnect();
+                }
+            })
         }
 
-        if(portfolioSectionHeading) {
-            new Typewriter(portfolioSectionHeading, {
-                delay: "natural",
-                strings: "Portfolio",
-                autoStart: true
-              });
-        }
+        const observer = new IntersectionObserver(callback);
 
-        if(clientsSectionHeading) {
-            new Typewriter(clientsSectionHeading, {
-                delay: "natural",
-                strings: "Our partners",
-                autoStart: true
-              });
-        }
-
-        if(teamSectionHeading) {
-            new Typewriter(teamSectionHeading, {
-                delay: "natural",
-                strings: "The team",
-                autoStart: true
-              });
-        }
-
-        if(contactSectionHeading) {
-            new Typewriter(contactSectionHeading, {
-                delay: "natural",
-                strings: "Contact Us",
-                autoStart: true
-              });
-        }
+        [
+            servicesSectionHeading,
+            portfolioSectionHeading,
+            clientsSectionHeading,
+            teamSectionHeading,
+            contactSectionHeading
+        ].forEach((element) => {
+            observer.observe(element);
+        });
     }
 })
