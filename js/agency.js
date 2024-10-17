@@ -48,9 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     new Typewriter(entry.target, {
-                        delay: "natural",
+                        delay: 50,
                         strings: entry.target.dataset.text,
-                        autoStart: true
+                        autoStart: true,
+                        stringSplitter: (input) => {
+                            return Array.from(input);
+                        }
                     });
 
                     observer.unobserve(entry.target);
