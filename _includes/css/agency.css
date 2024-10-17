@@ -707,10 +707,6 @@ section#contact {
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading-wrapper {
-    width: 400px;
-}
-
 section#contact .section-heading {
     color: #fff;
 }
@@ -955,7 +951,6 @@ section#team {
 .section-heading-wrapper {
     display: flex;
     align-items: center;
-    min-width: 340px;
     width: fit-content;
     margin: 50px auto;
     background-color: #772953;
@@ -966,10 +961,21 @@ section#team {
 }
 
 .section-heading-wrapper h2.section-heading {
-    font-size: 40px;
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
     margin-bottom: 0px;
+}
+
+@media(max-width: 768px) {
+    .section-heading-wrapper h2.section-heading {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 768px) {
+    .section-heading-wrapper h2.section-heading {
+        font-size: 40px;
+    }
 }
 
 #clients {
