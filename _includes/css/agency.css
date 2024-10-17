@@ -963,6 +963,7 @@ section#team {
 .section-heading-wrapper h2.section-heading {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
