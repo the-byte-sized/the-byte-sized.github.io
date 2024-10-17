@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
-                if(entry.isIntersecting) {
+                if (entry.isIntersecting) {
                     new Typewriter(entry.target, {
                         delay: "natural",
                         strings: entry.target.dataset.text,
                         autoStart: true
                     });
-                    
-                    observer.disconnect();
+
+                    observer.unobserve(entry.target);
                 }
             })
         }
