@@ -954,13 +954,13 @@ section#team {
 
 .section-heading-wrapper {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     min-width: 340px;
     width: fit-content;
     margin: 50px auto;
     background-color: #772953;
     color: white;
-    padding: 16px 35px;
+    padding: 12px 25px;
     border-radius: 10px;
 
 }
@@ -969,6 +969,7 @@ section#team {
     font-size: 40px;
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
+    margin-bottom: 0px;
 }
 
 #clients {
