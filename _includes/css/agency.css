@@ -965,7 +965,7 @@ section#team {
 
 }
 
-.section-heading-wrapper h2 {
+.section-heading-wrapper h2.section-heading {
     font-size: 40px;
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
