@@ -171,8 +171,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-nav.navbar:not(.navbar-shrink) {
-    top: 30px;
+@media(min-width: 768px) {
+    nav.navbar:not(.navbar-shrink) {
+        top: 30px;
+    }
 }
 
 .navbar-default {
