@@ -360,12 +360,6 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-@media(max-width: 768px) {
-    header .intro-heading {
-        font-size: 30px;
-    }
-}
-
 @media(min-width:768px) {
     header .intro-text {
         font-size: 50px;
@@ -385,9 +379,10 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
+        word-break: break-word;
+        line-height: clamp(30px, 115px, 200px);
+        font-size: clamp(2rem, 12vw, 210px);
         font-weight: 700;
-        line-height: 75px;
     }
 }
 
