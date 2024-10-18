@@ -2,6 +2,28 @@
 layout: default
 ---
 
-<section class="standalone">
-    <h1>Contanct landing page</h1>
-</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.3/sweetalert2.min.css" integrity="sha512-P2bn4p1rF+R7elZYDXsk2A3Vq4IlJqUhsk0i9PhuPGTBO43Z8nWaYiVcNidcMu8eVjUGUmyFQbVWf5bVDznjTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.3/sweetalert2.min.js" integrity="sha512-zK+mEmgBJpVrlnQXcbEfs6Ao4e+ESmepuHso+2UpRwMJbfhPGYNxAZz+IqsiK6/hGn8S1nx1mFOVBoJXJGx8PQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+<script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        width: '400px',
+        autoHeight: false,
+        showConfirmButton: true,
+        timer: 5000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    
+    Toast.fire({
+        icon: "success",
+        title: "Email correctly sent 📤",
+        text: 'We will be soon in contact with you! 🔥'
+    });
+</script>
