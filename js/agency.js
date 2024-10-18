@@ -47,15 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    new Typewriter(entry.target, {
-                        delay: 50,
-                        strings: entry.target.dataset.text,
-                        autoStart: true,
-                        stringSplitter: (input) => {
-                            return Array.from(input);
-                        }
-                    });
-
+                    setTimeout(() => {
+                        new Typewriter(entry.target, {
+                            delay: 50,
+                            strings: entry.target.dataset.text,
+                            autoStart: true,
+                            stringSplitter: (input) => {
+                                return Array.from(input);
+                            }
+                        });
+                    }, 325);
+                    
                     observer.unobserve(entry.target);
                 }
             })
