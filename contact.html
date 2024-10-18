@@ -9,16 +9,31 @@ layout: default
 <script>
     const Toast = Swal.mixin({
         toast: true,
+        confirmButtonText: 'Cool 😎',
         position: "top-end",
-        width: '400px',
+        width: '500px',
         autoHeight: false,
         showConfirmButton: true,
-        timer: 5000,
+        timer: 4250,
         timerProgressBar: true,
         didOpen: (toast) => {
-        toast.onmouseenter = Swal.stopTimer;
-        toast.onmouseleave = Swal.resumeTimer;
-        }
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        },
+        showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInRight
+              animate__faster
+            `
+          },
+         hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutRight
+              animate__faster
+            `
+          }
     });
     
     Toast.fire({
@@ -27,3 +42,9 @@ layout: default
         text: 'We will be soon in contact with you! 🔥'
     });
 </script>
+
+<style>
+    .swal2-popup.swal2-toast {
+        font-size: large;
+    }
+</style>
