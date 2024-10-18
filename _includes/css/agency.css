@@ -1017,6 +1017,7 @@ section#team {
 @media(max-width: 768px) {
     .section-heading-wrapper h2.section-heading {
         font-size: 30px;
+        text-align: center;
     }
 }
 
