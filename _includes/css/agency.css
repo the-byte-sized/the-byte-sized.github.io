@@ -719,6 +719,7 @@ section h3.section-subheading {
 }
 
 .team-member {
+    font-family: "Chakra Petch", sans-serif;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -742,8 +743,18 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-.team-member .member-description {
-    height: 300px;
+.team-member .team-member-name {
+    font-weight: 900;
+}
+
+.team-member .team-member-position {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.team-member .team-member-description {
+    font-size: medium;
+    line-height: 20px;
 }
 
 aside.clients img {
