@@ -323,7 +323,7 @@ header .intro-heading {
     font-size: clamp(2rem, 8vw, 12rem);
     -webkit-background-clip: text;
     background-clip: white;
-    color: transparent;
+    color: white;
     -webkit-text-stroke: 0.01em deeppink;
     filter: drop-shadow(0.05em 0.05em 0 deeppink);
 }
