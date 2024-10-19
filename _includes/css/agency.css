@@ -1015,7 +1015,7 @@ section#team {
     color: white;
     padding: 12px 25px;
     border-radius: 10px;
-
+    column-gap: 10px;
 }
 
 .section-heading-wrapper h2.section-heading {
@@ -1025,14 +1025,32 @@ section#team {
     margin-bottom: 0px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 550px) {
+    .section-heading-wrapper {
+        flex-direction: column;
+    }
+    
+    .section-heading-wrapper i.fa {
+        font-size: 30px !important;
+    }
+    
+    .section-heading-wrapper h2.section-heading {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 768px) {
     .section-heading-wrapper h2.section-heading {
         font-size: 30px;
         text-align: center;
     }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
+    .section-heading-wrapper i.fa {
+        font-size: 40px;
+    }
+    
     .section-heading-wrapper h2.section-heading {
         font-size: 40px;
     }
