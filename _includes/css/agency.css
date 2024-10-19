@@ -1100,3 +1100,9 @@ textarea {
         font-size: x-large !important;
     }  
 }
+
+@media (min-width: 1220px) {
+    #submit-contact-form {
+        margin-top: -35px;
+    }
+}
