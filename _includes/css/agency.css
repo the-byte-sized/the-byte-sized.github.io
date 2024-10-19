@@ -719,6 +719,9 @@ section h3.section-subheading {
 }
 
 .team-member {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 50px;
     text-align: center;
