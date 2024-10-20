@@ -34,6 +34,12 @@ people:
     - title: stack-overflow
       url: https://stackoverflow.com/users/5767099/claudio-cortese
 
+- name: Francesco Orlando
+  pic: francesco_orlando
+  color: E95420
+  position: AI Engineer & Software Developer
+  description: Francesco's passion for technology began in high school, where he experimented with computer science and robotics, competing in national tournaments. He graduated in Computer Science and is now pursuing a master's degree in Artificial Intelligence and Data Science 🎓. At ByteSized, he is an artificial intelligence developer 💻, specializing in computer vision and natural language processing for digital identity verification. Francesco has managed to perfectly combine hobby and work; technology and innovation drive him to overcome boundaries and leave his mark in the world of technology! 🤖✨ 
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
 
