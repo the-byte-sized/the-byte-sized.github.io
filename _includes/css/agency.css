@@ -1099,8 +1099,8 @@ textarea {
     grid-column-gap: 75px;
 }
 
-#clients-logos-wapper img {
-    max-height: 50px;
+#clients-logos-wrapper  img {
+    height: 75px;
 }
 
 @media(max-width: 620px) {
