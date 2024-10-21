@@ -1094,6 +1094,15 @@ textarea {
     margin-bottom: 0 !important;
 }
 
+#clients-logos-wrapper {
+    display: flex;
+    grid-column-gap: 75px;
+}
+
+#clients-logos-wapper img {
+    max-height: 50px;
+}
+
 @media(max-width: 620px) {
     .input-group-addon {
         font-size: medium !important;
