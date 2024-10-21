@@ -1123,33 +1123,34 @@ body.post-page header{
 #latest_posts {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 212.5px 212.5px;
     grid-gap: 25px;
     padding: 25px;
 }
 
-#latest_posts article {
+#latest_posts a {
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
     background-position: center;
-    background-image: url('img/posts/web-summit-2024.jpeg');
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
+    transition: box-shadow .25s ease-in-out;
 }
 
-#latest_posts article h1{
+#latest_posts a:hover {
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
+}
+
+#latest_posts a article h1{
     color: white;
     position: absolute;
     bottom: 25px;
     left: 25px;
 }
 
-#latest_posts article:first-of-type {
+#latest_posts a:first-of-type {
     grid-row: span 2;
     max-height: 425px;
-}
-
-#latest_posts article:hover {
-    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
-    background-size: cover;
 }
 
 @media(max-width: 620px) {
