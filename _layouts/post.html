@@ -4,7 +4,7 @@
   {% include head.html %}
 
 
-  <body id="page-top" class="index">
+  <body id="page-top" class="post-page">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -56,7 +56,14 @@
       </div>
     </header>
 
-    {{- content -}}
+    <article class="container">
+        <div class="section-heading-wrapper">
+            <i class="fa fa-terminal" aria-hidden="true"></i>
+            <h2 class="section-heading" data-text="{{ page.title }}"></h2>  
+        </div>
+
+        {{- content -}}
+    </article>
     
     {% include contact.html %}
     {% include footer.html %}
