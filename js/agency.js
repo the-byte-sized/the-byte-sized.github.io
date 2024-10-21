@@ -38,11 +38,7 @@ $('div.modal').on('show.bs.modal', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (Typewriter) {
-        const servicesSectionHeading = document.querySelector("#services .section-heading");
-        const portfolioSectionHeading = document.querySelector("#portfolio .section-heading");
-        const clientsSectionHeading = document.querySelector("#clients .section-heading");
-        const teamSectionHeading = document.querySelector("#team .section-heading");
-        const contactSectionHeading = document.querySelector("#contact .section-heading");
+        const sectionHeadings = document.querySelectorAll(".section-heading");
 
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
@@ -65,13 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const observer = new IntersectionObserver(callback);
 
-        [
-            servicesSectionHeading,
-            portfolioSectionHeading,
-            clientsSectionHeading,
-            teamSectionHeading,
-            contactSectionHeading
-        ].forEach((element) => {
+        sectionHeadings.forEach((element) => {
             observer.observe(element);
         });
     }
