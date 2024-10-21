@@ -1097,10 +1097,12 @@ textarea {
 #clients-logos-wrapper {
     display: flex;
     grid-column-gap: 75px;
+    justify-content: center;
+    align-items: center;
 }
 
 #clients-logos-wrapper  img {
-    height: 75px;
+    max-height: 75px;
 }
 
 @media(max-width: 620px) {
