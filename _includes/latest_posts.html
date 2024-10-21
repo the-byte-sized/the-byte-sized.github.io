@@ -1,9 +1,9 @@
 <section id="latest_posts" style="display: none;">
-    <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+  {% for post in site.posts %}
+    <a href="{{ post.url }}">
+      <article style="background-image: {{ post.image | prepend: /img/posts/ }};">
+        <h1>{{ post.title }}</h1>
+      </article>
+    </a>
+  {% endfor %}
 </section>
