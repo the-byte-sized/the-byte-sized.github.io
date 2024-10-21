@@ -1153,6 +1153,10 @@ body.post-page header{
     max-height: 425px;
 }
 
+#latest_posts a article {
+    height: 100%;
+}
+
 @media(max-width: 620px) {
     .input-group-addon {
         font-size: medium !important;
