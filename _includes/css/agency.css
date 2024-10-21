@@ -1105,6 +1105,11 @@ textarea {
     max-height: 75px;
 }
 
+article {
+    padding: 100px 0px 100px 0px;
+    font-size: 18px;
+}
+
 @media(max-width: 620px) {
     .input-group-addon {
         font-size: medium !important;
