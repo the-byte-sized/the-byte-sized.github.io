@@ -1,9 +1,16 @@
 <section id="latest_posts" style="display: none;">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}">
-      <article style="background-image: url('{{ post.image | prepend: /img/posts/ }}');">
-        <h1>{{ post.title }}</h1>
-      </article>
-    </a>
-  {% endfor %}
+  <div class="section-heading-wrapper">
+    <i class="fa fa-terminal" aria-hidden="true"></i>
+    <h2 class="section-heading" data-text="The latest scoops ✍🏻"></h2>  
+  </div>
+
+  <div id="posts-wrapper">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">
+        <article style="background-image: url('{{ post.image | prepend: /img/posts/ }}');">
+          <h1>{{ post.title }}</h1>
+        </article>
+      </a>
+    {% endfor %}
+  </div>
 </section>

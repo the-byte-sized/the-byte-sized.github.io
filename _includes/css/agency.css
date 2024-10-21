@@ -1120,7 +1120,7 @@ body.post-page header{
     height: 400px;
 }
 
-#latest_posts {
+#posts-wrapper {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 212.5px 212.5px;
@@ -1128,7 +1128,7 @@ body.post-page header{
     padding: 25px;
 }
 
-#latest_posts a {
+#latest_posts article {
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
     background-position: center;
     background-repeat: no-repeat;
@@ -1137,7 +1137,8 @@ body.post-page header{
     transition: box-shadow .25s ease-in-out;
 }
 
-#latest_posts a:hover {
+
+#latest_posts article:hover {
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
 }
 
@@ -1146,6 +1147,10 @@ body.post-page header{
     position: absolute;
     bottom: 25px;
     left: 25px;
+}
+
+#latest_posts a:not(:first-of-type) article h1 {
+    font-size: x-large;
 }
 
 #latest_posts a:first-of-type {
