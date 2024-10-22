@@ -1,0 +1,15 @@
+details {
+    background-color: #ededed;
+    padding: 15px;
+    font-size: larger;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details summary ul {
+    list-style-type: none;
+}
