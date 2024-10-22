@@ -1,3 +1,7 @@
+header {
+    height: max-content;
+}
+
 article.container {
     padding-top: 15px;
 }

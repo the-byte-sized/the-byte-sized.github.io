@@ -298,12 +298,15 @@ header {
     color: white;
     display: grid;
     place-items: center;
-    min-height: 100vh;
     padding: clamp(1rem, 2vw, 5rem);
     background: var(--bg);
     background-size: var(--s), var(--s), var(--s), var(--s), 100% 100%;
     background-attachment: fixed;
     text-align: center;
+}
+
+body:not(.post-page) header {
+    min-height: 100vh;
 }
 
 header .container {
@@ -314,7 +317,7 @@ header .container {
     place-items: center;
 }
 
-header .intro-text {
+body:not(.post-page) header .intro-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1118,12 +1121,6 @@ article {
 
 article p {
     font-size: 18px;
-}
-
-body.post-page header{
-    min-height: 400px;
-    max-height: 400px;
-    height: 400px;
 }
 
 #latest_posts {
