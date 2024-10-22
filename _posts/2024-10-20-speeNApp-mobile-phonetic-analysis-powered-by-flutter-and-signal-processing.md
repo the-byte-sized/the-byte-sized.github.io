@@ -6,8 +6,6 @@ image: /img/portfolio/speenap_logo.jpeg
 typewriter-delay: 20
 ---
 
-## Introduction
-
 In today’s era of mobile-first technology, access to advanced tools has expanded across various domains. However, phonetic analysis, a critical aspect of linguistic and acoustic research, has remained largely desktop-bound, relying on powerful tools such as Praat and ELAN. These applications, while highly capable, lack mobile accessibility, limiting their use in dynamic environments. Enter **SpeeNApp**, a mobile solution designed to bridge this gap, providing users with comprehensive phonetic analysis capabilities directly on their smartphones.
 
 ## Problem Overview
