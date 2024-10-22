@@ -63,7 +63,14 @@
     </header>
 
     <article class="container">
-        {% include toc.html html=content %}
+        <details open>
+            <summary>
+                Table of Contents
+            </summary>
+
+            {% include toc.html html=content %}
+        </details>
+
         {{- content -}}
     </article>
     
