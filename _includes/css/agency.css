@@ -1120,12 +1120,24 @@ body.post-page header{
     height: 400px;
 }
 
+
 #posts-wrapper {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 212.5px 212.5px;
     grid-gap: 25px;
     padding: 25px;
+}
+
+@media (max-width: 768px) {
+    #latest_posts {
+        padding-bottom: 0px;   
+    }
+}
+
+@media (min-width: 768px) {
+    #posts-wrapper {
+        grid-template-columns: 1.25fr 1fr;
+        grid-template-rows: 250px 250px;
+    }
 }
 
 #latest_posts article {
@@ -1158,7 +1170,6 @@ body.post-page header{
 
 #latest_posts a:first-of-type {
     grid-row: span 2;
-    max-height: 425px;
 }
 
 #latest_posts a article {
