@@ -1,3 +1,7 @@
+article.container {
+    padding-top: 15px;
+}
+
 details {
     background-color: #ededed;
     padding: 15px;
