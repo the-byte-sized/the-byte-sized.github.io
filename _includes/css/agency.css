@@ -1156,7 +1156,7 @@ body.post-page header{
     color: white;
     position: absolute;
     bottom: 25px;
-    left: 25px;
+    left: 35px;
     transition: transform .25s ease-in-out;
     will-change: transform;
 }
@@ -1174,7 +1174,7 @@ body.post-page header{
 }
 
 #latest_posts article:hover h1 {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 @media(max-width: 620px) {
