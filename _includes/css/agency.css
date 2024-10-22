@@ -1135,6 +1135,7 @@ body.post-page header{
     position: relative;
     overflow: hidden;
     transition: box-shadow .25s ease-in-out;
+    will-change: box-shadow;
 }
 
 
@@ -1147,6 +1148,8 @@ body.post-page header{
     position: absolute;
     bottom: 25px;
     left: 25px;
+    transition: transform .25s ease-in-out;
+    will-change: transform;
 }
 
 #latest_posts a:not(:first-of-type) article h1 {
@@ -1160,6 +1163,10 @@ body.post-page header{
 
 #latest_posts a article {
     height: 100%;
+}
+
+#latest_posts article:hover h1 {
+    transform: scale(1.05);
 }
 
 @media(max-width: 620px) {
