@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
                         new Typewriter(entry.target, {
-                            delay: 50,
+                            delay: entry.target.dataset.delay || 50,
                             strings: entry.target.dataset.text,
-                            autoStart: true,
+                            autoStart: entry.target.dataset.autoStart || true,
                             stringSplitter: (input) => {
                                 return Array.from(input);
                             }

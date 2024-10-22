@@ -1120,17 +1120,14 @@ body.post-page header{
     height: 400px;
 }
 
+#latest_posts {
+    padding-bottom: 0px;   
+}
 
 #posts-wrapper {
     display: grid;
     grid-gap: 25px;
     padding: 25px;
-}
-
-@media (max-width: 768px) {
-    #latest_posts {
-        padding-bottom: 0px;   
-    }
 }
 
 @media (min-width: 768px) {

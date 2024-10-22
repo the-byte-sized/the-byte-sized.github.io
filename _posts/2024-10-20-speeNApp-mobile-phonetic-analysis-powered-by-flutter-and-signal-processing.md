@@ -3,6 +3,7 @@ layout: post
 title: "SpeeNApp: Mobile Phonetic Analysis Powered by Flutter and Signal Processing"
 tags: flutter app news
 image: /img/portfolio/speenap_logo.jpeg
+typewriter-delay: 20
 ---
 
 ## Introduction

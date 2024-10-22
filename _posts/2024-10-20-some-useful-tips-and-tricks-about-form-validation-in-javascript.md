@@ -3,6 +3,7 @@ layout: post
 title: "Some Useful Tips And Tricks About Form Validation in JavaScript"
 tags: tutorial webdev javascript
 image: /img/posts/yup.png
+typewriter-delay: 20
 ---
 As time goes by, sooner or later, every developer has been tasked with building a form. 🛠️
 
