@@ -908,6 +908,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
+    text-transform: initial;
 }
 
 .portfolio-modal .modal-content p {
@@ -928,6 +929,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+    max-width: 200px;
 }
 
 .portfolio-modal .close-modal {
