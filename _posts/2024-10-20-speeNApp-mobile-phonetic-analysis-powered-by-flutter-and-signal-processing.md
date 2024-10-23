@@ -20,7 +20,7 @@ SpeeNApp was developed using **Flutter**, a popular cross-platform framework, wh
 
 Key design patterns, such as the **BLoC (Business Logic Component)** pattern, were employed to maintain a clean separation between the user interface and business logic. This modular approach not only improves scalability but also ensures that the app is easy to maintain and extend in future iterations.
 
-![SpeeNApp Overview]({{ site.baseurl }}/img/posts/speenap_overview.jpeg)
+![SpeeNApp Overview]({{ site.baseurl }}/img/posts/speenap_overview.jpeg){:.center-block}
 
 ## Core Functionalities
 
@@ -54,7 +54,7 @@ One of the most significant challenges faced during the development of SpeeNApp 
 
 Another challenge was replicating the accuracy of Praat’s pitch detection algorithm in a mobile environment. By adapting Boersma’s autocorrelation method and optimizing it for real-time analysis, SpeeNApp successfully provides precise pitch tracking without compromising on performance.
 
-![SpeeNApp challenges and solutions]({{ site.baseurl }}/img/posts/speenap_1.jpeg)
+![SpeeNApp challenges and solutions]({{ site.baseurl }}/img/posts/speenap_1.jpeg){:.center-block}
 
 ## Future Enhancements
 
