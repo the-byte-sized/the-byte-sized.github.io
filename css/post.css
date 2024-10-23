@@ -74,11 +74,11 @@ article img {
         background: none;
     }
     
-    .section-heading-wrapper {
+    header .section-heading-wrapper {
         margin: 80px 5px 30px 5px;
     }
     
-    .section-heading-wrapper h1 {
+    header .section-heading-wrapper h1 {
         font-size: x-large;
     }
 }
@@ -93,11 +93,11 @@ article img {
         margin-top: 40px;
     }
 
-    .section-heading-wrapper {
+    header .section-heading-wrapper {
         margin-top: 80px;
     }
     
-    .section-heading-wrapper h1 {
+    header .section-heading-wrapper h1 {
         font-size: x-large;
     }
 }

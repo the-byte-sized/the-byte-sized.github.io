@@ -43,12 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.querySelectorAll('article img').forEach((el) => {
-        el.addEventListener('click', () => {
-            new Viewer(
-                el, {
-                    backdrop: true
-                }
-            );
-        });
+        new Viewer(
+            el, {
+                backdrop: true
+            }
+        );
     })
 })
