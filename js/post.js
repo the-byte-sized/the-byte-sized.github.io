@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const rootElement = document.documentElement;
     let hasCssClassesBeenAdded = false;
 
-    function scrollToTop () {
+    function scrollToTop() {
         rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
+            top: 0,
+            behavior: "smooth"
         })
     }
 
     function handleScroll() {
         const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-        
-        if ((rootElement.scrollTop / scrollTotal ) > 0.40 ) {
+
+        if ((rootElement.scrollTop / scrollTotal) > 0.40) {
             scrollToTopBtn.classList.add("showBtn")
-            
-            if(!hasCssClassesBeenAdded) {
+
+            if (!hasCssClassesBeenAdded) {
                 setTimeout(() => {
                     scrollToTopBtn.firstElementChild.classList.add("animate__animated", "animate__bounce");
                     hasCssClassesBeenAdded = true;
@@ -38,7 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     scrollToTopBtn?.addEventListener("click", scrollToTop);
 
-    if(!details?.querySelector('ul')) {
+    if (!details?.querySelector('ul')) {
         details.classList.add('hidden');
     }
+
+    document.querySelectorAll('article img').forEach((el) => {
+        el.addEventListener('click', () => {
+            new Viewer(
+                el, {
+                    backdrop: true
+                }
+            );
+        });
+    })
 })

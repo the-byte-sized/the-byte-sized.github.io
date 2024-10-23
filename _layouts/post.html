@@ -72,14 +72,13 @@
             {{- content -}}
         </article>
         
+        <button id="scrollToTopBtn">
+            <p>☝️</p>    
+        </button>
+        
         {% include contact.html %}
         {% include footer.html %}
         {% include js.html %}
-
-        <script src="{{ "/js/post.js" | prepend: site.baseurl }}"></script>
-
-        <button id="scrollToTopBtn">
-            <p>☝️</p>    
-        </button>  
+        
     </body>
 </html>
