@@ -38,16 +38,38 @@ $('div.modal').on('show.bs.modal', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (Typewriter) {
-        const sectionHeadings = document.querySelectorAll(".section-heading");
-
+        const sectionHeadingWrappers = document.querySelectorAll(".section-heading-wrapper");
+        
+        sectionHeadingWrappers.forEach((el) => {
+            const x = el.cloneNode(true);
+            
+            x.style.setProperty("position", 'absolute');
+            
+            x.style.setProperty('left', '-200vw');
+            
+            x.style.setProperty('top', '-200vh');
+            
+            const appended = document.body.appendChild(x);
+            
+            const sectionHeading = appended.querySelector('.section-heading');
+            
+            sectionHeading.textContent = sectionHeading.dataset.text;
+            
+            el.style.setProperty("height", getComputedStyle(appended).height);
+            
+            appended.remove();
+        });
+        
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
-                        new Typewriter(entry.target, {
-                            delay: entry.target.dataset.delay || 50,
-                            strings: entry.target.dataset.text,
-                            autoStart: entry.target.dataset.autoStart || true,
+                        const sectionHeading = entry.target.querySelector('.section-heading');
+                        
+                        new Typewriter(sectionHeading, {
+                            delay: sectionHeading.dataset.delay || 50,
+                            strings: sectionHeading.dataset.text,
+                            autoStart: sectionHeading.dataset.autoStart || true,
                             stringSplitter: (input) => {
                                 return Array.from(input);
                             }
@@ -61,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const observer = new IntersectionObserver(callback);
 
-        sectionHeadings.forEach((element) => {
+        sectionHeadingWrappers.forEach((element) => {
             observer.observe(element);
         });
     }
