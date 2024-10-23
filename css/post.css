@@ -8,11 +8,29 @@
     transition: all .5s ease;
     background: #772953;
     border-radius: 50%;
-    padding: 15px;
+    width: 80px;
+    height: 80px;
+    font-size: xx-large;
     border: none;
+    box-shadow: 0px 2px 5px 2px rgb(0 0 0 / 40%);
+}
+
+#scrollToTopBtn p {
+    font-size: inherit; 
+    line-height: inherit; 
+    margin: 0;
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(0px 20px 2px rgba(0,0,0, .0));
+    line-height: 2.2;
+}
+
+#scrollToTopBtn:hover p {
+    transform: translateY(-10px); 
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(0px 20px 2px rgba(0,0,0, .3));
 }
   
-.showBtn {
+#scrollToTopBtn.showBtn {
     opacity: 1;
     transform: translateY(0);
 }
