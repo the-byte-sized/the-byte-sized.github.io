@@ -21,3 +21,7 @@ details summary {
 details ul {
     list-style-type: none;
 }
+
+article img {
+    max-width: 100%;
+}
