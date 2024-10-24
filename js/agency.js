@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (Typewriter) {
         const sectionHeadings = document.querySelectorAll(".section-heading");
 
-        const callback = (entries, observer) => {
+        const sectionHeadingsCallback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
@@ -59,10 +59,27 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         }
 
-        const observer = new IntersectionObserver(callback);
+        const sectionHeadingsObserver = new IntersectionObserver(sectionHeadingsCallback);
 
         sectionHeadings.forEach((element) => {
-            observer.observe(element);
+            sectionHeadingsObserver.observe(element);
         });
     }
+
+
+    const lazyLoadedBgsCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.setProperty('background-image', `url('${entry.target.dataset.backgroundImage}')`);
+                
+                observer.unobserve(entry.target);
+            }
+        })
+    }
+
+    const lazyLoadedBgsObserver = new IntersectionObserver(lazyLoadedBgsCallback);
+
+    document.querySelectorAll('[data-lazy-load-bg]').forEach((element) => {
+        lazyLoadedBgsObserver.observe(element);
+    });
 })
