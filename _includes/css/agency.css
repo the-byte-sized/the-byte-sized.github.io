@@ -14,6 +14,10 @@ body {
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
+.container {
+    padding: 0 60px;
+}
+
 .text-muted {
     color: #{{ site.data.template.color.muted }};
 }
@@ -417,8 +421,6 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -427,7 +429,6 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
-    max-width: 400px;
     height: 240px;
     background-size: 150px;
     background-position: center;
@@ -472,8 +473,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    padding: 25px;
-    max-width: 400px;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
     height: 160px;
@@ -516,12 +516,6 @@ section h3.section-subheading {
     
     #portfolio .portfolio-item .portfolio-caption {
         width: 300px;
-    }
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
     }
 }
 
