@@ -4,6 +4,8 @@
     <!-- typewriter-effect -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
+    <script src="{{ "/js/hiraku.min.js" | prepend: site.baseurl }}"></script>
+
    <!-- Controlla il layout e aggiungi gli script necessari solo per i post -->
    {% if page.layout == "post" %}
       <script src="{{ "/js/post.js" | prepend: site.baseurl }}"></script>
