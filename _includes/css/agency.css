@@ -180,12 +180,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-@media(min-width: 768px) {
-    nav.navbar:not(.navbar-shrink) {
-        top: 30px;
-    }
-}
-
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -1219,4 +1213,9 @@ article p {
     #submit-contact-form {
         margin-top: -35px;
     }
+}
+
+.navbar {
+    transition: transform .25s ease-in-out !important;
+    margin-bottom: 0px;
 }
