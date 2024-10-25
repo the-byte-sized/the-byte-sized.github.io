@@ -77,7 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    const lazyLoadedBgsObserver = new IntersectionObserver(lazyLoadedBgsCallback);
+    const lazyLoadedBgsObserver = new IntersectionObserver(lazyLoadedBgsCallback, {
+        rootMargin: "-100px 0px 0px 0px"
+    });
 
     document.querySelectorAll('[data-lazy-load-bg]').forEach((element) => {
         lazyLoadedBgsObserver.observe(element);
