@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+    if(Hiraku) {
+        new Hiraku(".js-offcanvas", {
+            btn: ".js-offcanvas-btn",
+            fixedHeader: ".js-fixed-header",
+            direction: "left",
+            breakpoint: 767,
+            width: '50%'
+        });   
+    }
+
     if (Typewriter) {
         const sectionHeadings = document.querySelectorAll(".section-heading");
 
@@ -50,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const servicesSection = document.querySelector('header');
     const nav = document.querySelector('nav');
     
-    const callback = ((entries, observer) => {
+    const servicesSectionObserverCallback = ((entries, _observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting === false) {
                 nav.style.setProperty('transform', 'translateY(0px)');
@@ -62,11 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })        
     });
     
-    const observer = new IntersectionObserver(callback, {
+    const servicesSectionObserver = new IntersectionObserver(servicesSectionObserverCallback, {
         rootMargin: "-120px 0px 0px 0px"
     })
     
-    observer.observe(servicesSection);
-    
-    console.log(servicesSection);
+    servicesSectionObserver.observe(servicesSection);
 })

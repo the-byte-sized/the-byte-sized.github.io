@@ -1219,3 +1219,25 @@ article p {
     transition: transform .25s ease-in-out !important;
     margin-bottom: 0px;
 }
+
+.js-hiraku-offcanvas-body {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar-offcanvas {
+        display: none;
+    }
+
+    .js-hiraku-offcanvas {
+        display: block;
+        position: static;
+        background: none;
+    }
+
+    .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
+        position: static;
+        margin-left: 0;
+        width:auto;
+    }
+} 
