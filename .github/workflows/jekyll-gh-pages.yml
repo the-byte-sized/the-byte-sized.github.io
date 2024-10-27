@@ -53,7 +53,7 @@ jobs:
 
       - name: Run PurgeCSS
         run: |
-          npx purgecss --css _site/**/*.css --content _site/**/*.html --output _site/assets/css/
+          npx purgecss --css _site/**/*.css --content _site/**/*.html --output _site/css/
           
       - name: Install Critters
         run: npm install -g critters
