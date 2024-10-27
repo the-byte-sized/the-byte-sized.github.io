@@ -175,12 +175,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-@media(min-width: 768px) {
-    nav.navbar:not(.navbar-shrink) {
-        top: 30px;
-    }
-}
-
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -309,7 +303,7 @@ body:not(.post-page) header {
     min-height: 100vh;
 }
 
-header .container {
+header > div {
     background: rgb(0 0 0 / 0.75);
     width: 100%;
     height: 100%;
@@ -329,7 +323,7 @@ body:not(.post-page) header .intro-text {
 
 header .intro-heading {
     margin: 0;
-    font-size: clamp(2rem, 8vw, 12rem);
+    font-size: clamp(5.3rem, 13vw, 12rem);
     -webkit-background-clip: text;
     background-clip: white;
     color: white;
@@ -417,8 +411,6 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -427,7 +419,6 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
-    max-width: 400px;
     height: 240px;
     background-size: 150px;
     background-position: center;
@@ -472,8 +463,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    padding: 25px;
-    max-width: 400px;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
     height: 160px;
@@ -516,12 +506,6 @@ section h3.section-subheading {
     
     #portfolio .portfolio-item .portfolio-caption {
         width: 300px;
-    }
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
     }
 }
 
@@ -728,10 +712,9 @@ section h3.section-subheading {
 .team-member {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px max-content;
+    grid-template-rows: 300px 280px max-content;
     grid-row-gap: 20px;
     font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -1224,4 +1207,67 @@ article p {
     #submit-contact-form {
         margin-top: -35px;
     }
+}
+
+.navbar {
+    transition: transform .25s ease-in-out !important;
+    margin-bottom: 0px;
+}
+
+.js-hiraku-offcanvas-body {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar-offcanvas {
+        display: none;
+    }
+
+    .js-hiraku-offcanvas {
+        display: block;
+        position: static;
+        background: none;
+    }
+
+    .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
+        position: static;
+        margin-left: 0;
+        width:auto;
+    }
+} 
+
+nav {
+    width: 100vw;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media(max-width: 782px) {
+    body:not(.post-page) header {
+        padding: 0px;
+    }
+}
+
+@keyframes rocket-shake {
+    10% {
+        transform: rotate(var(--fa-rotate-angle,0));
+    }
+
+    40% {
+        transform: rotate(15deg) scale(1.3);
+    }
+    
+    70% {
+        transform: rotate(35deg) scale(1.3);
+    }
+        
+    90% {
+        transform: rotate(var(--fa-rotate-angle,0));
+    }
+}
+
+header .intro-text .fa {
+    --fa-rotate-angle: 45deg;
+    animation: rocket-shake 500ms;
+    animation-iteration-count: infinite;
 }

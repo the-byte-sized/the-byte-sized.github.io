@@ -7,7 +7,7 @@
   <div id="posts-wrapper">
     {% for post in site.posts %}
       <a href="{{ post.url }}">
-        <article style="background-image: url('{{ post.image | prepend: /img/posts/ }}');">
+        <article data-lazy-load-bg data-background-image="{{ post.image | prepend: /img/posts/ }}">
           <h1>{{ post.title }}</h1>
         </article>
       </a>

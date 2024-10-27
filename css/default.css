@@ -1,0 +1,29 @@
+#services-wrapper {
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    padding: 0px 10vw;
+}
+
+#services-wrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+    max-width: max-content;
+}
+
+@media(max-width: 1200px) {
+    #services-wrapper {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+@media(min-width: 1200px) {
+    #services-wrapper {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+}
