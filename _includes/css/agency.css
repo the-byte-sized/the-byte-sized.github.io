@@ -1211,7 +1211,7 @@ article p {
 }
 
 .navbar {
-    transition: transform .25s ease-in-out !important;
+    transition: transform .25s ease-in-out;
     margin-bottom: 0px;
 }
 

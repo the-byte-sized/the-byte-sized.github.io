@@ -115,6 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting === false) {
                 nav.style.setProperty('transform', 'translateY(0px)');
                 nav.style.setProperty('background-color', 'rgb(0 0 0 / 0.75)');
+                nav.style.setProperty('padding', '8px 0px');
+
             } else {
                 nav.style.setProperty('transform', 'translateY(30px)');
                 nav.style.setProperty('background-color', 'transparent');
