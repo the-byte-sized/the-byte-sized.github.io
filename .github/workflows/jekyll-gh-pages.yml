@@ -42,11 +42,13 @@ jobs:
         with:
           directory: ./_site
           overwrite: true
-      - name: Remove unused CSS with PurgeCSS
-        uses: FullHuman/purgecss-github-action@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-          content: "_site/**/*.html"  # Analizza il contenuto HTML per capire quali classi CSS sono utilizzate
-          css: "_site/assets/css/*.css"  # Percorso dei file CSS da processare
+          node-version: '16'
+      - name: Run PurgeCSS
+        run: |
+          npx purgecss --css _site/assets/css/*.css --content _site/**/*.html --output _site/assets/css/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
