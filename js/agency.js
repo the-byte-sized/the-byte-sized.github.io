@@ -64,12 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
-                        const sectionHeading = entry.target.querySelector('.section-heading');
-                        
-                        new Typewriter(sectionHeading, {
-                            delay: sectionHeading.dataset.delay || 50,
-                            strings: sectionHeading.dataset.text,
-                            autoStart: sectionHeading.dataset.autoStart || true,
+                        new Typewriter(entry.target, {
+                            delay: entry.target.dataset.delay || 50,
+                            strings: entry.target.dataset.text,
+                            autoStart: entry.target.dataset.autoStart || true,
                             stringSplitter: (input) => {
                                 return Array.from(input);
                             }
