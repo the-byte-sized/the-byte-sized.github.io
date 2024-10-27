@@ -51,12 +51,18 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Set write permissions for CSS files
-        run: chmod -R 755 _site/assets/css
-        
-      - name: Run PurgeCSS
+      - name: Copy CSS files to temporary directory
         run: |
-          npx purgecss --css _site/assets/css/*.css --content _site/**/*.html --output _site/assets/css/
+          mkdir temp_css
+          cp _site/assets/css/*.css temp_css/
+
+      - name: Run PurgeCSS in temporary directory
+        run: |
+          npx purgecss --css temp_css/*.css --content _site/**/*.html --output temp_css/
+
+      - name: Move optimized CSS back to site directory
+        run: |
+          mv temp_css/*.css _site/assets/css/
           
       - name: Install Critters
         run: npm install -g critters
