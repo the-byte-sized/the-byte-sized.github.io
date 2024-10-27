@@ -388,6 +388,7 @@ header .intro-text .intro-heading {
 }
 
 section {
+    overflow-x: hidden;
     padding: 50px 0 100px 0px;
 }
 

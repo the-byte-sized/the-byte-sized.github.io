@@ -41,23 +41,25 @@ document.addEventListener("DOMContentLoaded", () => {
         const sectionHeadingWrappers = document.querySelectorAll(".section-heading-wrapper");
         
         sectionHeadingWrappers.forEach((el) => {
-            const clonedNode = el.cloneNode(true);
+            setTimeout(() => {
+                const clonedNode = el.cloneNode(true);
             
-            clonedNode.style.setProperty("position", 'absolute');
-            
-            clonedNode.style.setProperty('left', '-200vw');
-            
-            clonedNode.style.setProperty('top', '-200vh');
-            
-            const appended = document.body.appendChild(clonedNode);
-            
-            const sectionHeading = appended.querySelector('.section-heading');
-            
-            sectionHeading.textContent = sectionHeading.dataset.text;
-            
-            el.style.setProperty("height", getComputedStyle(appended).height);
-            
-            appended.remove();
+                clonedNode.style.setProperty("position", 'absolute');
+                
+                clonedNode.style.setProperty('left', '-200vw');
+                
+                clonedNode.style.setProperty('top', '-200vh');
+                
+                const appended = document.body.appendChild(clonedNode);
+                
+                const sectionHeading = appended.querySelector('.section-heading');
+                
+                sectionHeading.textContent = sectionHeading.dataset.text;
+                
+                el.style.setProperty("height", getComputedStyle(appended).height);
+                
+                appended.remove();
+            }, 300);
         });
 
         const sectionHeadingsCallback = (entries, observer) => {
