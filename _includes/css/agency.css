@@ -712,10 +712,9 @@ section h3.section-subheading {
 .team-member {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px max-content;
+    grid-template-rows: 300px 280px max-content;
     grid-row-gap: 20px;
     font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 50px;
     text-align: center;
 }
 
