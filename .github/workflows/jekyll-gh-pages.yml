@@ -50,7 +50,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
-          
+
+      - name: Set write permissions for CSS files
+        run: chmod -R 755 _site/assets/css
+        
       - name: Run PurgeCSS
         run: |
           npx purgecss --css _site/assets/css/*.css --content _site/**/*.html --output _site/assets/css/
