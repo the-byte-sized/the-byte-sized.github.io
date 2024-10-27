@@ -61,7 +61,30 @@ jobs:
       - name: Inline Critical CSS with Critters
         run: |
           find _site -name '*.html' -exec critters --path _site {} \;
-          
+
+      - name: Install Sharp for Image Optimization
+        run: npm install sharp
+
+      - name: Optimize Images and Convert to WebP with Sharp
+        run: |
+          # Ottimizza le immagini JPG, JPEG e PNG
+          find _site/assets/images -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) -exec sh -c '
+            for img; do
+              npx sharp "$img" \
+                --resize 1920 \
+                --jpeg quality=80 \
+                --png compressionLevel=8 \
+                --output "$img"
+
+              # Converte in WebP e salva nella stessa directory
+              webp_img="${img%.*}.webp"
+              npx sharp "$img" \
+                --resize 1920 \
+                --webp quality=80 \
+                --output "$webp_img"
+            done
+          ' sh {} +
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
