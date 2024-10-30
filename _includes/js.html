@@ -9,7 +9,11 @@
 
     <script src="{{ "/js/hiraku.min.js" | prepend: site.baseurl }}"></script>
 
-   <!-- Controlla il layout e aggiungi gli script necessari solo per i post -->
+   <!-- Controlla il layout e aggiungi gli script necessari -->
+   {% if page.layout == "default" %}
+      <script src="{{ "/js/default.js" | prepend: site.baseurl }}"></script>
+   {% endif %}
+
    {% if page.layout == "post" %}
       <script src="{{ "/js/post.js" | prepend: site.baseurl }}"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js" integrity="sha512-EC3CQ+2OkM+ZKsM1dbFAB6OGEPKRxi6EDRnZW9ys8LghQRAq6cXPUgXCCujmDrXdodGXX9bqaaCRtwj4h4wgSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
