@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
         lazyLoadedBgsObserver.observe(element);
     });
 
-    const servicesSection = document.querySelector('header');
+    const header = document.querySelector('header');
     const nav = document.querySelector('nav');
 
-    const servicesSectionObserverCallback = ((entries, _observer) => {
+    const headerObserverCallback = ((entries, _observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting === false) {
                 nav.style.setProperty('transform', 'translateY(0px)');
@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
 
-    const servicesSectionObserver = new IntersectionObserver(servicesSectionObserverCallback, {
+    const headerObserver = new IntersectionObserver(headerObserverCallback, {
         rootMargin: "-120px 0px 0px 0px"
     })
 
-    servicesSectionObserver.observe(servicesSection);
+    headerObserver.observe(header);
 })
