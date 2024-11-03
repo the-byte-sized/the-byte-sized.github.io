@@ -300,7 +300,7 @@ header {
 }
 
 body:not(.post-page) header {
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 header > div {
@@ -318,7 +318,7 @@ body:not(.post-page) header .intro-text {
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 50px;
-    height: 100vh;
+    height: 100dvh;
 }
 
 header .intro-heading {
