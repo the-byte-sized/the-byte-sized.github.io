@@ -34,7 +34,7 @@ people:
     - title: stack-overflow
       url: https://stackoverflow.com/users/5767099/claudio-cortese
 
-# - name: Francesco Orlando
+# - name: Vincenzo Mazzocchi
 #   pic: francesco_orlando
 #   color: E95420
 #   position: AI Engineer & Software Developer
@@ -44,6 +44,17 @@ people:
 #       url: https://github.com/Effeo
 #     - title: linkedin
 #       url: https://www.linkedin.com/in/francesco-orlando-8b8851232
+
+# - name: Vincenzo Mazzocchi
+#   pic: vincenzo_mazzocchi
+#   color: E95420
+#   position: Project Manager
+#   description:
+#   social:
+#     - title: github
+#       url: https://github.com/Effeo
+#     - title: linkedin
+#       url: https://www.linkedin.com/in/vincenzo-mazzocchi-a8387a269/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
