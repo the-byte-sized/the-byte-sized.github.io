@@ -1121,7 +1121,7 @@ article p {
 @media (min-width: 768px) {
     #posts-wrapper {
         grid-template-columns: 1.25fr 1fr;
-        grid-template-rows: 250px 250px;
+        grid-template-rows: 250px 150px 250px;
     }
 }
 
@@ -1165,6 +1165,10 @@ article p {
 }
 
 #latest_posts a:first-of-type {
+    grid-row: span 2;
+}
+
+#latest_posts a:nth-of-type(3) {
     grid-row: span 2;
 }
 
