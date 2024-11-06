@@ -26,3 +26,17 @@
         column-gap: 50px;
     }
 }
+
+#clients-logos-wrapper a[href="https://www.goldenbitweb.com"] img {
+    width: 100px;
+    max-height: initial;
+}
+
+#clients-logos-wrapper a[href="https://www.goldenbitweb.com"] p {
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    color: color(srgb 0.2652 0.3084 0.4037);
+    font-weight: bold;
+}
