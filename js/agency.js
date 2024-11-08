@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
         new Hiraku(".js-offcanvas", {
             btn: ".js-offcanvas-btn",
             fixedHeader: ".js-fixed-header",
-            direction: "left",
+            direction: "right",
             breakpoint: 767,
             width: '50%'
         });
