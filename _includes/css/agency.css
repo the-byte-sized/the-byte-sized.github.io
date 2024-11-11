@@ -710,6 +710,10 @@ section h3.section-subheading {
     }
 }
 
+#team .col-sm-4 {
+    margin-bottom: 3em;
+}
+
 .team-member {
     display: grid;
     grid-template-columns: 1fr;
@@ -750,6 +754,7 @@ section h3.section-subheading {
 .team-member .team-member-description {
     font-size: medium;
     line-height: 20px;
+    text-align: left;
 }
 
 aside.clients img {
