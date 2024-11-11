@@ -34,27 +34,25 @@ people:
     - title: stack-overflow
       url: https://stackoverflow.com/users/5767099/claudio-cortese
 
-# - name: Vincenzo Mazzocchi
-#   pic: francesco_orlando
-#   color: E95420
-#   position: AI Engineer & Software Developer
-#   description: Francesco's passion for technology began in high school, where he experimented with computer science and robotics, competing in national tournaments. He graduated in Computer Science and is now pursuing a master's degree in Artificial Intelligence and Data Science 🎓. At ByteSized, he is an artificial intelligence developer 💻, specializing in computer vision and natural language processing for digital identity verification. Francesco has managed to perfectly combine hobby and work; technology and innovation drive him to overcome boundaries and leave his mark in the world of technology! 🤖✨ 
-#   social:
-#     - title: github
-#       url: https://github.com/Effeo
-#     - title: linkedin
-#       url: https://www.linkedin.com/in/francesco-orlando-8b8851232
+- name: Francesco Orlando
+  pic: francesco_orlando
+  color: E95420
+  position: AI Engineer & Software Developer
+  description: Francesco's passion for technology began in high school, where he experimented with computer science and robotics, competing in national tournaments. He graduated in Computer Science and is now pursuing a master's degree in Artificial Intelligence and Data Science 🎓. At ByteSized, he is an artificial intelligence developer 💻, specializing in computer vision and natural language processing for digital identity verification. Francesco has managed to perfectly combine hobby and work; technology and innovation drive him to overcome boundaries and leave his mark in the world of technology! 🤖✨ 
+  social:
+    - title: github
+      url: https://github.com/Effeo
+    - title: linkedin
+      url: https://www.linkedin.com/in/francesco-orlando-8b8851232
 
-# - name: Vincenzo Mazzocchi
-#   pic: vincenzo_mazzocchi
-#   color: E95420
-#   position: Project Manager
-#   description:
-#   social:
-#     - title: github
-#       url: https://github.com/Effeo
-#     - title: linkedin
-#       url: https://www.linkedin.com/in/vincenzo-mazzocchi-a8387a269/
+- name: Vincenzo Mazzocchi
+  pic: vincenzo_mazzocchi
+  color: E95420
+  position: Project Manager
+  description: Vincenzo Mazzocchi holds a degree in Management Engineering for Logistics and Production and is currently completing a master’s degree in Management Engineering. He specializes in project management, leveraging his technical and organizational skills to optimize processes and resources.
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/vincenzo-mazzocchi-a8387a269/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
