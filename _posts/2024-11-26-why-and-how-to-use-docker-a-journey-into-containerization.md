@@ -3,7 +3,7 @@ layout: post
 title: "Why and how to use Docker: A journey into containerization 🚢"
 tags: docker tutorial 
 image: /img/posts/docker-tutorial.png
-published: false
+published: true
 ---
 In the ever-evolving world of software development, speed and efficiency are paramount.
 

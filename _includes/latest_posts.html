@@ -5,7 +5,7 @@
   </div>
 
   <div id="posts-wrapper">
-    {% for post in site.posts %}
+    {% for post in site.posts | limit: 4%}
       <a href="{{ post.url }}">
         <article data-lazy-load-bg data-background-image="{{ post.image | prepend: /img/posts/ }}">
           <h1>{{ post.title }}</h1>
