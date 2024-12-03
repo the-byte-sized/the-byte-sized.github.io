@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Git: A Comprehensive Beginner's Guide to Version Control"
 tags: git tutorial beginners guide version-control
-image: /img/posts/git-guide.jpeg
+image: /img/posts/git-tutorial.jpeg
 published: true
 ---
 
