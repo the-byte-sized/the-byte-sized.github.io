@@ -1,0 +1,29 @@
+name: "📝 New Jekyll Post (draft)"
+description: "Create a new draft post"
+labels: ["new-post"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Slug (kebab-case, without date)
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (stringa, space-separated)
+  - type: input
+    id: image
+    attributes:
+      label: Image
+      placeholder: /img/posts/<slug>.jpg
+  - type: textarea
+    id: body
+    attributes:
+      label: Body
+      description: "Pase markdown content here (omit front matter)"
+      render: markdown
