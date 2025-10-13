@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenZL, Explained: Format-Aware Compression with a Universal Decoder"
+title: "OpenZL, Explained: Format-Aware Compression with a Universal Decoder 🗜️"
 tags: tutorial compression data-engineering performance openzl
 image: /img/posts/Introducing-OpenZL-Meta.webp
 typewriter-delay: 20
